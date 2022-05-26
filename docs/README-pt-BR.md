@@ -1,7 +1,7 @@
 ![img](https://github.com/padupe/personal-setup/blob/main/assets/setup.png)
 # Setup Pessoal
 
-## Descriação
+## Descrição
 Instalação das principais ferramentas utilizadas pelo time de SRE:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 - [DBeaver](https://dbeaver.io/)
