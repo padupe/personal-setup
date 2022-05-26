@@ -1,6 +1,6 @@
 ![img](https://github.com/padupe/personal-setup/blob/main/assets/setup.png)
 # Personal Setup
-> Check the Documentation in pt-BR by clicking 🇧🇷 [here](https://github.com/padupe/personal-setup/blob/main/docs/README-pt-br.md 'here').
+> Check the Documentation in pt-BR by clicking 🇧🇷 [here](https://github.com/padupe/personal-setup/blob/main/docs/README-pt-BR.md 'here').
 
 ## Description
 Installation of the main tools used:
