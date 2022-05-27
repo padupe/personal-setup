@@ -188,7 +188,7 @@ Python()
 Serverless()
 {
     echo 'Install Serverless CLI ...'
-    sudo apt-get update
+    sudo apt update
     npm install -g serverless
     serverless -v
     echo 'Success installing the Serverless CLI'
@@ -225,6 +225,19 @@ VSCode()
     sudo apt update
     sudo snap install code --clasic
     echo 'Success installing the Visual Studio Code'
+    echo
+}
+################################################################################
+# Yarn Package                                                                 #
+################################################################################
+Yarn()
+{
+    echo 'Install Yarn...'
+    sudo apt update
+    npm install --global yarn
+    yarn --version
+
+    echo 'Success installing the Yarn'
     echo
 }
 ################################################################################
