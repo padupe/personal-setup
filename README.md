@@ -2,6 +2,13 @@
 # Personal Setup
 > Check the Documentation in pt-BR by clicking 🇧🇷 [here](https://github.com/padupe/personal-setup/blob/main/docs/README-pt-BR.md 'here').
 
+## Index
+- [Description](#description)
+- [Objective](#objective)
+- [Requirements](#requirements)
+- [Step by Step](#step-by-step)
+    - [Install `git` command](#install-git-command) 
+
 ## Description
 Installation of the main tools used:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
@@ -30,12 +37,13 @@ Make the necessary installations for the start of activities in a new environmen
 ## Requirements
 - OS Linux/Ubunt;
 - Root User;
+- `git` command available (check the installation [here](#install-git-command))
 
 ## Step by Step
 1. Open a terminal
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
 
-2. Navigate through your environment directory to the desired folder;
+2. Navigate through your environment directory to the desired folder
 
 3. Clone this repository
 
@@ -67,3 +75,14 @@ sudo chmod +x install.sh
 7. Perform confirmations when necessary
 
 8. Done 🥳
+
+### Install `git` command
+> Run only if you don't have the git command available in your environment
+
+1. Open a terminal
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
+
+2. Run the command:
+```
+sudo apt install git
+```
