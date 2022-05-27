@@ -257,7 +257,6 @@ PreInstall()
     echo 'Update and Upgrade System'
     sudo apt update && sudo apt upgrade
     sudo apt install curl
-    sudo apt install git
     echo
 }
 ################################################################################
