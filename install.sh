@@ -87,7 +87,7 @@ Docker()
     echo
     echo 'Docker | Phase 1'
     # Phase 1
-    sudo ap-get update
+    sudo apt-get update
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
     # Phase 2
