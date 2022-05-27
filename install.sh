@@ -6,7 +6,7 @@
 Help()
 {
    # Display Help
-   echo "Install AWS CLI, DBeaver, decK, Discord, Docker, Node.js, Postman, Python3.8, Serverless CLI and set it to your system."
+   echo "Install AWS CLI, Beekeper, DBeaver, decK, Discord, Docker, Emote, Node.js, Postman, Python3.8, Serverless CLI and set it to your system."
    echo
    echo "Usage: ./install.sh [-h]"
    echo "options:"
@@ -28,6 +28,17 @@ AWS()
     echo
 }
 ################################################################################
+# Beekeper-Studio                                                              #
+################################################################################
+Beekeper()
+{
+    echo 'Install Beekeper...'
+    sudo apt update
+    sudo snap install beekeper-studio
+    echo 'Success installing the Beekeper'
+    echo
+}
+################################################################################
 # Chrome                                                                       #
 ################################################################################
 Chrome()
@@ -45,10 +56,8 @@ Chrome()
 DBeaver()
 {
     echo 'Install DBeaver...'
-    sudo apt-get update
-    sudo sh -c 'wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb'
-    sudo dpkg -i dbeaver-ce_6.0.0_amd64.deb
-    sudo apt-get install -f
+    sudo apt update
+    snap install dbeaver-ce
     echo 'Success installing the DBeaver'
     echo
 }
@@ -71,10 +80,8 @@ Deck()
 Discord()
 {
     echo 'Install Discord...'
-    sudo apt-get update
-    sudo apt install gdebi-core wget
-    sudo sh -c 'wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"'
-    sudo gdebi ~/discord.deb
+    sudo apt update
+    sudo snap install discord
     echo 'Success installing the Discord'
     echo
 }
@@ -87,7 +94,7 @@ Docker()
     echo
     echo 'Docker | Phase 1'
     # Phase 1
-    sudo ap-get update
+    sudo apt update
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
     # Phase 2
@@ -101,18 +108,18 @@ Docker()
     sudo apt update
     apt-cache policy docker-ce
     
-    # Phase 4
-    echo 'Docker | Phase 4'
-    sudo apt install docker-ce
-    sudo systemctl status docker
-
-    # to run Docker without the need for 'sudo'
-    echo 'Enter your username: '
-    read username
-    sudo usermod -aG docker $username
-    su - $username
-
     echo 'Success installing the Docker and docker-compose'
+    echo
+}
+################################################################################
+# Emote                                                                        #
+################################################################################
+Emote()
+{
+    echo 'Install Emote...'
+    sudo apt update
+    sudo snap install emote
+    echo 'Success installing the Emote'
     echo
 }
 ################################################################################
@@ -121,8 +128,8 @@ Docker()
 Flameshot()
 {
     echo 'Install Flameshot...'
-    sudo apt-get update
-    sudo apt install flameshot
+    sudo apt update
+    sudo snap install flameshot
     echo 'Success installing the Flameshot'
     echo
 }
@@ -135,7 +142,7 @@ Nodejs()
     sudo apt-get update
     curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.profile 
-    nvm install node
+    nvm install --lts
     echo 'Success installing the Node.js'
     echo
 }
@@ -145,8 +152,8 @@ Nodejs()
 Notion()
 {
     echo 'Install Notion...'
-    sudo apt-get update
-    sudo apt-get install notion
+    sudo apt update
+    sudo snap install notion-snap
     echo 'Success installing the Notion'
     echo
 }
@@ -156,7 +163,7 @@ Notion()
 Postman()
 {
     echo 'Install Postman...'
-    sudo apt-get update
+    sudo apt update
     sudo snap install postman
     echo 'Success installing the Postman'
     echo
@@ -191,8 +198,8 @@ Serverless()
 Slack()
 {
     echo 'Install Slack...'
-    sudo apt-get update
-    sudo apt install -y slack
+    sudo apt update
+    sudo snap install slack
     echo 'Success installing the Slack'
     echo
 }
@@ -213,11 +220,8 @@ Spotify()
 VSCode()
 {
     echo 'Install Visual Studio Code...'
-    sudo apt-get update
-    sudo apt install software-properties-common apt-transport-https wget
-    wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-    sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-    sudo apt install code
+    sudo apt update
+    sudo snap install code --clasic
     echo 'Success installing the Visual Studio Code'
     echo
 }
@@ -232,17 +236,7 @@ ZSH()
 
     echo 'Verify ZSH version'
     zsh --version
-
     sudo usermod -s /usr/bin/zsh $(whoami)
-
-    echo 'Install Oh-My-ZSH'
-    sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-    echo 'Install zsh-syntax-highlighting'
-    sudo apt install zsh-syntax-highlighting
-    echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-
-    source ~/.zshrc
 
     echo 'Success installing the ZSH'
     echo
@@ -289,11 +283,13 @@ done
 ################################################################################
 PreInstall
 AWS
+Beekeper
 Chrome
 DBeaver
 Deck
 Discord
 Docker
+Emote
 Flameshot
 Nodejs
 Notion

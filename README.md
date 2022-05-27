@@ -12,10 +12,12 @@
 ## Description
 Installation of the main tools used:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+- [Beekeper](https://www.beekeeperstudio.io/)
 - [DBeaver](https://dbeaver.io/)
 - [decK](https://docs.konghq.com/deck/)
     - *decK helps to manage [Kong](https://konghq.com/) configuration declaratively*
 - [Discord](https://discord.com/)
+- [Emote](https://snapcraft.io/install/emote/ubuntu)
 - [Flameshot](https://flameshot.org/)
 - [Google Chrome](https://www.google.com/intl/en/chrome/)
 - [Docker](https://www.docker.com/)

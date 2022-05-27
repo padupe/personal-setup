@@ -4,11 +4,13 @@
 ## Descrição
 Instalação das principais ferramentas utilizadas pelo time de SRE:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+- [Beekeper](https://www.beekeeperstudio.io/)
 - [DBeaver](https://dbeaver.io/)
 - [decK](https://docs.konghq.com/deck/)
     - *O decK ajuda a gerenciar a configuração do [Kong](https://konghq.com/) de maneira declarativa*
 - [Discord](https://discord.com/)
 - [Docker](https://www.docker.com/)
+- [Emote](https://snapcraft.io/install/emote/ubuntu)
 - [Flameshot](https://flameshot.org/)
 - [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
 - [Node.js](https://nodejs.org/en/)
