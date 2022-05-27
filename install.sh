@@ -104,7 +104,6 @@ Docker()
     # Phase 4
     echo 'Docker | Phase 4'
     sudo apt install docker-ce
-    sudo systemctl status docker
 
     # to run Docker without the need for 'sudo'
     echo 'Enter your username: '
