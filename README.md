@@ -30,8 +30,6 @@ Installation of the main tools used:
 - [Slack](https://slack.com/)
 - [Spotify](https://www.spotify.com/)
 - [VS Code](https://code.visualstudio.com/)
-- [ZSH](https://www.zsh.org/)
-    - *with plugin install [Oh my Zsh](https://ohmyz.sh/)*
 
 ## Objective
 Make the necessary installations for the start of activities in a new environment.
@@ -88,3 +86,36 @@ sudo chmod +x install.sh
 ```
 sudo apt install git
 ```
+
+### Optional Installations
+- [Gnome Terminal](https://github.com/padupe/personal-setup/blob/main/gnome-terminal.sh 'Gnome Terminal')
+
+    1 - Grant access permission to the binary file `gnome-terminal.sh`
+    ```
+    sudo chmod +x gnome-terminal.sh 
+    ```
+
+    2 - Run the command:
+    ```
+    ./gnome-terminal.sh
+    ```
+
+    3 - Perform confirmations when necessary
+
+    4 - Done 🚀
+
+- [Oh My Zsh](https://github.com/padupe/personal-setup/blob/main/oh-my-zsh.sh 'Oh My Zsh')
+
+    1 - Grant access permission to the binary file `oh-my-zsh.sh`
+    ```
+    sudo chmod +x oh-my-zsh.sh 
+    ```
+
+    2 - Run the command:
+    ```
+    ./oh-my-zsh.sh
+    ```
+
+    3 - Perform confirmations when necessary
+
+    4 - Done 🚀
