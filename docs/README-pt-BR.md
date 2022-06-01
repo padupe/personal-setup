@@ -1,6 +1,12 @@
 ![img](https://github.com/padupe/personal-setup/blob/main/assets/setup.png)
 # Setup Pessoal
 
+## Índice
+- [Descrição](#descricao)
+- [Objetivo](#objetivo)
+- [Requisitos](#requisitos)
+- [Passo a Passo](#passo-a-passo)
+
 ## Descrição
 Instalação das principais ferramentas utilizadas pelo time de SRE:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
@@ -22,8 +28,6 @@ Instalação das principais ferramentas utilizadas pelo time de SRE:
 - [Slack](https://slack.com/)
 - [Spotify](https://www.spotify.com/)
 - [VS Code](https://code.visualstudio.com/)
-- [ZSH](https://www.zsh.org/)
-    - *Instalação do plugin [Oh my Zsh](https://ohmyz.sh/)*
 
 ## Objetivo
 Efetuar as instalações necessárias no ambiente dos novos colaboradores do time de SRE da MadeiraMadeira.
@@ -68,3 +72,45 @@ sudo chmod +x install.sh
 7. Realize as confirmações quando necessário
 
 8. Pronto :partying_face:
+
+### Instalação do comando `git`
+1. Abra um Terminal
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
+
+2. Rode o comando:
+```
+sudo apt install git
+```
+
+### Instalações Opcionais
+- [Gnome Terminal](https://github.com/padupe/personal-setup/blob/main/gnome-terminal.sh 'Gnome Terminal')
+
+    1 - Conceda permissão de acesso ao arquivo binário `gnome-terminal.sh`
+    ```
+    sudo chmod +x gnome-terminal.sh 
+    ```
+
+    2 - Rode o comando::
+    ```
+    ./gnome-terminal.sh
+    ```
+
+    3 - Realize as confirmações quando necessário
+
+    4 - Done 🚀
+
+- [Oh My Zsh](https://github.com/padupe/personal-setup/blob/main/oh-my-zsh.sh 'Oh My Zsh')
+
+    1 - Conceda permissão de acesso ao arquivo binário `oh-my-zsh.sh`
+    ```
+    sudo chmod +x oh-my-zsh.sh 
+    ```
+
+    2 - Rode o comando::
+    ```
+    ./oh-my-zsh.sh
+    ```
+
+    3 - Realize as confirmações quando necessário
+
+    4 - Done 🚀
