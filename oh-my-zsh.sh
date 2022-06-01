@@ -1,8 +1,29 @@
-echo 'Install Oh-My-ZSH'
-    sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+################################################################################
+# Zsh                                                                          #
+################################################################################
+Zsh()
+{
+    echo 'Install ZSH...'
+    sudo apt install zsh
+    chsh -s $(which zsh)
+    echo 'Success installing the ZSH'
+    echo
+}
+################################################################################
+# OhMyZsh                                                                      #
+################################################################################
+OhMyZsh()
+{
+    echo 'Install Oh My Zsh...'
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo 'Install zsh-syntax-highlighting'
-    sudo apt install zsh-syntax-highlighting
-    echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-
+    chsh -s $(which zsh)
     source ~/.zshrc
+    echo 'Success installing the Oh My Zsh'
+    echo
+}
+################################################################################
+# Program                                                                      #
+################################################################################
+ZSH
+OhMyZsh
