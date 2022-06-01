@@ -314,5 +314,6 @@ Serverless
 Slack
 Spotify
 VSCode
+Yarn
 ZSH
 Finish
